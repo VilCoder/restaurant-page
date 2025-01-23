@@ -1,0 +1,123 @@
+/* ==================================== GENERAL STYLES ==================================== */
+:root {
+    --black-color: #000;
+    --lightblack-color: #222;
+    --white-color: #FFF;
+    --wheat-color: #F5DEB3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: system-ui, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+body {
+    min-height: 100vh;
+}
+
+
+
+/* ==================================== SIDEBAR ==================================== */
+.container__sidebar {
+    background-color: var(--wheat-color);
+}
+
+.sidebar__list {
+    display: flex;
+    list-style: none;
+}
+
+.sidebar__link {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    color: var(--black-color);
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.sidebar__link:hover {
+    background-color: var(--lightblack-color);
+    color: var(--white-color);
+}
+
+.sidebar__link:active {
+    opacity: 0.5;
+}
+
+.container__content {
+    position: relative;
+}
+
+
+
+/* ==================================== CONTENT ==================================== */
+#content {
+    aspect-ratio: 8 / 16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60rem;
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+}
+
+.content__title {
+    font-size: 5rem;
+    background: linear-gradient(90deg, #F7D28B, #EAA23E, #ff8a00);
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+    animation: text-animation 2s infinite linear;
+}
+
+@keyframes text-animation {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 200%;
+    }
+}
+
+.content__text {
+    width: 60%;
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 30px rgb(227 228 237 / 0.37);
+    border: 2px solid rgb(255 255 255 / 0.18);
+}
+
+.credit {
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: var(--white-color);
+    opacity: 0.8;
+}
+
+.credit * {
+    color: inherit;
+}
