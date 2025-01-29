@@ -9,7 +9,7 @@ import pear from '../image/poached-pear.jpg';
 
 function displayMenu() {
     const menuContent = document.querySelector('#content');
-    content.style.backgroundImage = '';
+    menuContent.style.backgroundImage = '';
     menuContent.textContent = '';
 
     const containerTitle = document.createElement('div');
@@ -52,7 +52,7 @@ function displayMenu() {
     const dishes = [
         {
             image: steakImage.src,
-            info: 'Fillet in red wine and 3 pepperds',
+            info: 'Fillet in red wine and 3 peppers',
             price: '$18'
         },
         {
@@ -82,7 +82,7 @@ function displayMenu() {
         },
         {
             image: filoImage.src,
-            info: 'Filo stuffed with portobello mushroom and tomate sauce',
+            info: 'Filo stuffed with portobello mushroom and tomato sauce',
             price: '$17.5'
         },
         {

@@ -1,8 +1,8 @@
 import coverImage from '../image/restaurant_cover.jpeg';
 
 function displayHome() {
-    const content = document.querySelector('#content');
-    content.textContent = '';
+    const homeContent = document.querySelector('#content');
+    homeContent.textContent = '';
 
     const infoContent = document.createElement('div');
     infoContent.classList.add('content__info');
@@ -30,9 +30,9 @@ function displayHome() {
     const restaurantCover = new Image();
     restaurantCover.src = coverImage;
 
-    content.style.backgroundImage = `url('${restaurantCover.src}')`;
-    content.appendChild(infoContent);
-    content.appendChild(credit);
+    homeContent.style.backgroundImage = `url('${restaurantCover.src}')`;
+    homeContent.appendChild(infoContent);
+    homeContent.appendChild(credit);
     return content;
 }
 

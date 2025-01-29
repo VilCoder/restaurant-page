@@ -72,7 +72,7 @@ body {
     align-items: center;
     position: relative;
     width: 100%;
-    min-height: 60rem;
+    min-height: 61rem;
     background-size: cover;
     background-position: center;
     color: var(--white-color);
@@ -144,7 +144,7 @@ body {
 }
 
 .container__title::after {
-    content: 'Ven a probar los platillos con los mejores ingredientes';
+    content: 'Come and try the dishes with the best ingredients';
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -210,4 +210,11 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--white-color);
+}
+
+
+.container__contact {
+    display: flex;
+    width: 100%;
+    background-color: #132028;
 }
