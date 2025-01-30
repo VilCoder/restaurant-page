@@ -4,16 +4,22 @@ import { displayMenu } from './menu';
 import { displayAbout } from './about';
 
 document.addEventListener('DOMContentLoaded', () => {
-    const navbarButtons = document.querySelectorAll('.navbar__button');
-    const homeButton = navbarButtons[0];
-    const menuButton = navbarButtons[1];
-    const aboutButton = navbarButtons[2];
+    const navbarButtons = document.querySelectorAll('.navbar__button');    
+    navbarButtons.forEach((button, index) => {
+        button.addEventListener('click', () =>{
+            navbarButtons.forEach(button => button.classList.remove('navbar__button--active'));
 
-    homeButton.addEventListener('click', () => displayHome());
+            button.classList.add('navbar__button--active');
 
-    menuButton.addEventListener('click', () => displayMenu());
+            if (index === 0) { 
+                displayHome();
+            } else if (index === 1) {
+                displayMenu();
+            } else if (index === 2) {
+                displayAbout();
+            }
+        });
+    });
 
-    aboutButton.addEventListener('click', () => displayAbout());
-    
-    displayAbout();
+    displayHome();
 });

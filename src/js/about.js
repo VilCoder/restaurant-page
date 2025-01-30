@@ -16,7 +16,7 @@ function displayAbout() {
             <div class="cards__card">
                 <i class="card__icon">${locationIcon}</i>
                 <h2 class="card__title">Location</h2>
-                <p class="card__text">Ave 17 Broadway St New York, NY 1001</p>
+                <p class="card__text">AVE 17 BROADWAY ST NEW YORK, NY 1001</p>
             </div>
             <div class="cards__card">
                 <i class="card__icon">${phoneIcon}</i>
@@ -37,16 +37,17 @@ function displayAbout() {
         <form class="contact__form">
             <h1 class="form__title">Contact us</h1>
             <div class="form__group">
-                <input type="text" class="form__input id="name" name="user__name" maxlength="100" placeholder="Enter your name" required>
-                <label class="form__label" for="name"></label>
-            </dic>
+                <input type="text" class="form__input name="user__name" id="name" maxlength="100" placeholder="Enter your name" required>
+                <label class="form__label" for="name">Name *</label>
+            </div>
             <div class="form__group">
-                <input type="text" class="form__input id="email" name="user__email" maxlength="100" placeholder="Enter a valid email address" required>
-                <label class="form__label" for="email"></label>
-            </dic>
+                <input type="email" class="form__input name="user__email" id="email" maxlength="100" placeholder="Enter a valid email address" required>
+                <label class="form__label" for="email">Email *</label>
+            </div>
             <div class="form__group">
-                <textarea class="form__textarea" name="user__message" id="message" cols="30" rows="10"></textarea>
-            </dic>
+                <textarea class="form__textarea" name="user__message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                <label class="form__label" for="message">Message</label>
+            </div>
             <button type="submit" class="form__button">Submit</button>
         </form>`
     );
