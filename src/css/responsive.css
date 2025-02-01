@@ -1,0 +1,68 @@
+/* ==================================== TABLET ==================================== */
+@media (min-width: 768px) {
+    /* ==================================== HOME PAGE ==================================== */
+    .content__info {
+        width: 70%;
+    }
+
+    .info__title {
+        font-size: 5rem;
+    }
+
+    .info__text {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+/* ==================================== DESKTOP ==================================== */
+@media (min-width: 1064px) {
+    .menu__toggle {
+        display: none;
+    }
+
+    .container__navbar {
+        position: static;
+        width: 100%;
+    }
+
+    .navbar__list {
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+
+
+    /* ==================================== ABOUT PAGE ==================================== */
+    .container__contact {
+        flex-flow: row nowrap;
+        padding: 1.5rem 0 4.5rem;
+    }
+
+    .contact__cards {
+        margin-top: 0;
+        flex-basis: 40%;
+        grid-template-columns: repeat(auto-fit, minmax(calc(220px - 0.7rem), 1fr));
+        transform: translateX(30px);
+    }
+
+    .cards__card,
+    .card__text {
+        width: auto;
+    }
+
+    .contact__form {
+        flex-basis: 55%;
+        padding-bottom: 4.5rem;
+        transform: translateX(-40px);
+    }
+
+    .form__title {
+        font-size: 6rem;
+    }
+
+    .form__group {
+        width: 70%;
+    }
+}
