@@ -37,7 +37,7 @@ body {
 
 
 
-/*====================== Styling Scrollbar for the whole page ======================*/
+/* ==================================== SCROLLBAR ==================================== */
 ::-webkit-scrollbar {
     width: 20px;
     background-color: transparent;
