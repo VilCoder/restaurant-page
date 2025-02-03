@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+    // Button responsive
     menuButton.addEventListener('click', () => {
         containerNavbar.classList.toggle('container__navbar--visible');
 

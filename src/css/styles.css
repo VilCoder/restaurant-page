@@ -12,6 +12,7 @@
     --valid-color: #8BC34A;
     --placeholder-color: #a5a6a7d2;
     --icon-color: #89d8e3;
+    --scrollbar-color: #d3d3d4;
 }
 
 * {
@@ -32,7 +33,24 @@ html {
 
 body {
     min-height: 100vh;
-    overflow-x: hidden;
+}
+
+
+
+/*====================== Styling Scrollbar for the whole page ======================*/
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 5px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--primary-color);
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
 }
 
 
@@ -44,7 +62,7 @@ body {
     right: -100%;
     width: 30rem;
     height: 100%;
-    background-color: var(--wheat-color);
+    background-color: var(--primary-color);
     transition: all 300ms linear;
     z-index: 999;
 }
@@ -56,11 +74,13 @@ body {
 .navbar__list {
     display: flex;
     flex-direction: column;
+    position: relative;
     margin-top: 7rem;
     list-style: none;
 }
 
 .navbar__button {
+    position: relative;
     width: 100%;
     font-size: 1.8rem;
     font-weight: bold;
@@ -71,11 +91,12 @@ body {
     cursor: pointer;
     text-decoration: none;
     letter-spacing: 1px;
+    z-index: 5;
 }
 
 .navbar__button:hover,
 .navbar__button--active {
-    background-color: var(--lightblack-color);
+    background-color: var(--black-color);
     color: var(--white-color);
 }
 
@@ -89,9 +110,8 @@ body {
     line-height: 5rem;
     font-size: 2.5rem;
     text-align: center;
-    background-color: var(--wheat-color);
+    background-color: var(--primary-color);
     border-radius: 3rem;
-    color: var(--color-principal);
     cursor: pointer;
     z-index: 9999;
     transition: all 500ms linear;
@@ -118,9 +138,6 @@ body {
 }
 
 /* ==================================== CONTENT ==================================== */
-.container__content {
-    position: relative;
-}
 
 #content {
     display: flex;
@@ -133,7 +150,6 @@ body {
     background-position: center;
     color: var(--white-color);
 }
-
 
 
 /* ==================================== HOME PAGE ==================================== */
