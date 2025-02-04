@@ -9,7 +9,7 @@ import pear from '../image/poached-pear.jpg';
 
 function displayMenu() {
     const menuContent = document.querySelector('#content');
-    menuContent.style.backgroundImage = '';
+    // menuContent.style.backgroundImage = '';
     menuContent.textContent = '';
 
     const containerTitle = document.createElement('div');

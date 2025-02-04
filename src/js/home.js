@@ -4,16 +4,16 @@ function displayHome() {
     const homeContent = document.querySelector('#content');
     homeContent.textContent = '';
 
-    const infoContent = document.createElement('div');
+    const infoContent = document.createElement('section');
     infoContent.classList.add('content__info');
 
     const title = document.createElement('h1');
-    title.textContent = 'Awesome food';
+    title.textContent = 'Awesome Food';
     title.classList.add('info__title');
 
     const text = document.createElement('p');
     text.textContent = `
-                        Awesome food has the best gourmet dishes that will make your palate experience
+                        Awesome Food has the best gourmet dishes that will make your palate experience
                         and explosion of flavors, along with a modern, pleasant and fresh atmosphere
                         make this an unparalleled experience that you can't miss. What are you waiting
                         for, come and experience it!.

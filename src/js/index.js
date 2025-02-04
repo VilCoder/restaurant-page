@@ -4,6 +4,7 @@ import '../css/responsive.css';
 import { displayHome } from './home';
 import { displayMenu } from './menu';
 import { displayAbout } from './about';
+import { displayContact } from './contact';
 
 document.addEventListener('DOMContentLoaded', () => {
     const containerNavbar = document.querySelector('.container__navbar');
@@ -22,6 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 displayMenu();
             } else if (index === 2) {
                 displayAbout();
+            } else if (index === 3) {
+                displayContact();
             }
         });
     });
